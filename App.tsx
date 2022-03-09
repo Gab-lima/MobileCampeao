@@ -5,34 +5,23 @@ import {
   StyleSheet, 
 } from "react-native";
 
-
-
-
-import { Financeiro } from "./src/pages/Financeiro";
-
-// import { NavigationContainer } from '@react-navigation/native';
-// import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { NavigationContainer } from '@react-navigation/native'
+import { AppRoutes } from "./src/routes/app.routes"; 
 
 
 
 export default function App() {
   return (     
 
-    <View style={styles.container}>
-      {/* <Dashboard/> */}
-      <Financeiro/>
-    </View> 
+    
+      <NavigationContainer>
+      <AppRoutes />
+      </NavigationContainer>
+      
+   
 
       
   )
 
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#FAFAFA',
-    paddingHorizontal: 30,
-    paddingVertical: 30,
-  },
-});

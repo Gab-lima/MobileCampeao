@@ -1,7 +1,7 @@
 import React from "react";
 import {
   View,
-  Button,
+  StyleSheet,
 } from "react-native";
 
 import { Header } from "../components/Header";
@@ -13,10 +13,10 @@ import { TitleP24, Flex, Mb28, } from "../styles/styles"
 
 
 
-export function Financeiro() {
+export default function Financeiro() {
  
   return (
-    <View>
+    <View style={styles.container}>
       <Header name="Gustavo"/>
       <TitleP24 color="#3E3B5B">DASHBOARD</TitleP24>
 
@@ -37,6 +37,16 @@ export function Financeiro() {
     </View>
   );
 }
+
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#FAFAFA',
+    paddingHorizontal: 30,
+    paddingVertical: 30,
+  },
+});
 
 
 

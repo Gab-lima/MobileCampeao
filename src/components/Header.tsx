@@ -16,7 +16,6 @@ export function Header(props:  HeaderProps) {
   return (
     <FlexComponent>
 
-     {/* <ImageLogo source={URL:'../assets/img/logo-header.svg'} /> */}
      <Image source={require('../assets/img/logo-header.png')} />
 
      <View>

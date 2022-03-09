@@ -17,9 +17,10 @@ import { TitleP12, TitleP24, Flex, Mb28,  } from "../styles/styles"
 
 
 
-export function Dashboard() {
+export default function Dashboard() {
  
   return (
+    <View style={styles.container}>
     <View>
       <Header name="Gustavo"/>
       <TitleP24 color="#3E3B5B">DASHBOARD</TitleP24>
@@ -54,8 +55,17 @@ export function Dashboard() {
       </Flex>
 
     </View>
+    </View>
   );
 }
 
 
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#FAFAFA',
+    paddingHorizontal: 30,
+    paddingVertical: 30,
+  },
+});
 
