@@ -2,17 +2,16 @@ import React from "react";
 
 import {
   View,
-  StyleSheet,
-  Text,
+  StyleSheet, 
 } from "react-native";
 
 
 
 
-import { Dashboard } from "./src/pages/Dashboard";
+import { Financeiro } from "./src/pages/Financeiro";
 
-import { NavigationContainer } from '@react-navigation/native';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+// import { NavigationContainer } from '@react-navigation/native';
+// import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 
 
@@ -20,7 +19,8 @@ export default function App() {
   return (     
 
     <View style={styles.container}>
-      <Dashboard/>
+      {/* <Dashboard/> */}
+      <Financeiro/>
     </View> 
 
       
@@ -31,7 +31,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#FFF',
+    backgroundColor: '#FAFAFA',
     paddingHorizontal: 30,
     paddingVertical: 30,
   },

@@ -41,3 +41,12 @@ margin-bottom: 28px;
 export const imgGrafico = styled.Image`
 margin-bottom: 28px;
 `
+
+export const ButtonText = styled.Button`
+width: 45%;
+border-radius: 4px;
+padding: 10px 50px;
+align-items: center;
+justify-content: center;
+color: #f5f5;
+`
