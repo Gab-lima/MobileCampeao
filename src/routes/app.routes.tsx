@@ -4,9 +4,13 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 const { Navigator, Screen } = createBottomTabNavigator();
 
+// import { Entypo, Feather } from '@expo/vector-icons';
+
 
 import Dashboard from '../pages/Dashboard';
 import Financeiro from '../pages/Financeiro';
+import Vendas from '../pages/Vendas';
+import Notificacoes from '../pages/Notificacoes';
 
 
 export function AppRoutes(){
@@ -26,8 +30,8 @@ export function AppRoutes(){
             name="Dashboard"
             component={Dashboard}
             // options={{
-            //     tabBarIcon: (({ size, color}) =>
-                
+            //     tabBarIcon: ({ size, color}) => (
+            //     <Entypo name='home' size={size} color={color} />
             //     )
             // }}
             />
@@ -37,11 +41,11 @@ export function AppRoutes(){
             />
             <Screen 
             name="Vendas"
-            component={Financeiro}
+            component={Vendas}
             />
             <Screen 
             name="Notificação"
-            component={Financeiro}
+            component={Notificacoes}
             />
             <Screen 
             name="Sair"
