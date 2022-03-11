@@ -43,10 +43,18 @@ margin-bottom: 28px;
 `
 
 export const ButtonText = styled.Button`
-width: 45%;
+width: 15%;
 border-radius: 4px;
 padding: 10px 50px;
 align-items: center;
 justify-content: center;
-color: #f5f5;
+`
+
+export const InputStyleFilter = styled.TextInput`
+width: 85%;
+border-radius: 4px;
+padding: 10px 50px;
+align-items: center;
+background-color: #f6f6;
+justify-content: center;
 `

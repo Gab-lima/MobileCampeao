@@ -22,7 +22,9 @@ export function AppRoutes(){
             tabBarInactiveTintColor: '#CADFFF',  
             tabBarStyle: {
                 height: 84,
-                backgroundColor: '#025579'
+                backgroundColor: '#025579',
+                paddingBottom: 20,
+                paddingTop: 20,
             }
         }}
         >

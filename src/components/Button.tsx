@@ -4,7 +4,7 @@ import { ButtonText } from "../styles/styles"
 
 interface ButtonProps{
     title: string;
-    color: string;
+    color?: string;
     
   }
 
