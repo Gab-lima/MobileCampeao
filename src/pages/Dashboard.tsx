@@ -25,7 +25,7 @@ export default function Dashboard() {
       <Header name="Gustavo"/>
       <TitleP24 color="#3E3B5B">DASHBOARD</TitleP24>
 
-      <Flex>
+      <Flex >
       <CardPrincipal backGround="#025579" small="Saldo disponível" text="R$ 10.000,00"/>
       <CardPrincipal backGround="#FD7C6D" small="Saldo pendente" text="R$ 10.000,00"/>
       </Flex>

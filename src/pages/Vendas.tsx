@@ -12,7 +12,7 @@ import { CardPrincipal } from "../components/CardPrincipal";
 
 import { TitleP24, Flex, Mb28, InputStyleFilter, FlexComponent, ButtonText} from "../styles/styles"
 
-export default function Financeiro() {
+export default function Vendas() {
 
   const [count, setCount] = useState(false);
  
