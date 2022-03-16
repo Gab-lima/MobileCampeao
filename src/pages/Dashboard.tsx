@@ -12,7 +12,7 @@ import {Picker} from '@react-native-picker/picker';
 import { Header } from "../components/Header";
 import { CardPrincipal } from "../components/CardPrincipal";
 
-import { TitleP12, TitleP24, Flex, Mb28,  } from "../styles/styles"
+import { TitleP16, TitleP24, Flex, Mb28,  } from "../styles/styles"
 
 
 
@@ -35,7 +35,7 @@ export default function Dashboard() {
       <TitleP24 color="#3E3B5B">Vendas realizadas</TitleP24>
 
       <View>
-      <TitleP12 fontWeight="400" color="#3E3B5B" textAlign="left">Ultimos 7  dias</TitleP12>
+      <TitleP16 fontWeight="400" color="#3E3B5B" textAlign="left">Ultimos 7  dias</TitleP16>
       <TitleP24 fontWeight="400" color="#3E3B5B" textAlign="left">R$ 20.000,00</TitleP24>
       </View>
    

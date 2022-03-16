@@ -11,6 +11,7 @@ import { Header } from "../components/Header";
 import { CardPrincipal } from "../components/CardPrincipal";
 
 import { TitleP24, Flex, Mb28, InputStyleFilter, FlexComponent, ButtonText} from "../styles/styles"
+import { CardTransacoes } from '../components/CardTransacoes';
 
 export default function Vendas() {
 
@@ -50,6 +51,14 @@ export default function Vendas() {
         </View>
       </View>
     </Modal>
+
+
+    <CardTransacoes title="PAGO" backGround="#025579"/>
+    <CardTransacoes title="PENDENTE" backGround="#FD7C6D"/>
+    <CardTransacoes title="PAGO" backGround="#025579"/>
+    <CardTransacoes title="PENDENTE" backGround="#FD7C6D"/>
+    <CardTransacoes title="PAGO" backGround="#025579"/>
+    <CardTransacoes title="PENDENTE" backGround="#FD7C6D"/>
 
       
     </View>

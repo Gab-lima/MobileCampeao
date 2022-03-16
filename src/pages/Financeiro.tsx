@@ -10,7 +10,7 @@ import { Header } from "../components/Header";
 import { CardPrincipal } from "../components/CardPrincipal";
 import { ButtonStyle } from "../components/Button";
 
-import { TitleP24, Flex, Mb28, ButtonText, TitleP12, InputSimple, TitleP14 } from "../styles/styles"
+import { TitleP24, Flex, Mb28, ButtonText, TitleP16, InputSimple, TitleP14 } from "../styles/styles"
 
 
 
@@ -41,22 +41,22 @@ export default function Financeiro() {
         <View style={{backgroundColor:"#FFF", margin:50, padding:40, borderRadius:10, flex: 1}} >
       <ButtonText color="#FD7C6D" title="Fechar" onPress={() => setCount(false)}/>
       <TitleP24 textAlign="center" color="#3E3B5B">Realizar saque</TitleP24>
-      <TitleP12 textAlign="center" color="#3E3B5B">Valor do saque</TitleP12>
+      <TitleP16 textAlign="center" color="#3E3B5B">Valor do saque</TitleP16>
       <InputSimple />
       <TitleP14 textAlign="left" >Valor do saque</TitleP14>
 
-      <TitleP12 textAlign="left" color="#3E3B5B">Seus dados</TitleP12>
-      <TitleP12 textAlign="left" color="#3E3B5B">Titular/Razão Social: Gustavo Henrique da silva</TitleP12>
-      <TitleP12 textAlign="left" color="#3E3B5B">CPF/CNPJ: 00.000.000/0000-00</TitleP12>
-      <TitleP12 textAlign="left" color="#3E3B5B">Banco: 0237 - Bradesco</TitleP12>
-      <TitleP12 textAlign="left" color="#3E3B5B">Agência: 0001</TitleP12>
-      <TitleP12 textAlign="left" color="#3E3B5B">C/C: 00000-0</TitleP12>
+      <TitleP16 textAlign="left" color="#3E3B5B">Seus dados</TitleP16>
+      <TitleP16 textAlign="left" color="#3E3B5B">Titular/Razão Social: Gustavo Henrique da silva</TitleP16>
+      <TitleP16 textAlign="left" color="#3E3B5B">CPF/CNPJ: 00.000.000/0000-00</TitleP16>
+      <TitleP16 textAlign="left" color="#3E3B5B">Banco: 0237 - Bradesco</TitleP16>
+      <TitleP16 textAlign="left" color="#3E3B5B">Agência: 0001</TitleP16>
+      <TitleP16 textAlign="left" color="#3E3B5B">C/C: 00000-0</TitleP16>
 
       <Mb28/>
 
       <ButtonText title="Para essa solicitação será cobrada a tarifa de saque de R$2,50" color="#EE1D23"/>
       <Mb28/>
-      
+
       <ButtonText title="CONFIRMAR SAQUE" color="#025579"/>
 
 
