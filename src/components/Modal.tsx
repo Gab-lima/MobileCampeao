@@ -1,33 +1,52 @@
-import React from "react";
+import { useLinkProps } from "@react-navigation/native";
+import React, { JSXElementConstructor, useState } from "react";
 import {
   View,
   StyleSheet,
+  Modal,
 } from "react-native";
 
-
-import { TitleP24,} from "../styles/styles"
-
+import { ButtonText,} from "../styles/styles"
 
 
+interface modalProps{
+  children: React.ReactNode;
+  opened: boolean;
+  onClose: (opened: boolean) => void;
+}
 
-export default function Modal() {
+export default function ModalComponent(props: modalProps) {
+
  
   return (
-      <View>
-    <View style={styles.teste}>
-      <TitleP24 color="#3E3B5B">FINANCEIRO</TitleP24>
+    <View>
 
+      <Modal
+        transparent={true}
+        visible={props.opened}
+        >
+      <View style={{backgroundColor:"#000000aa", flex: 1}}>
+        <View style={{backgroundColor:"#FFF", margin:50, padding:40, borderRadius:10, flex: 1}} >
+      
+        <ButtonText
+          color="#FD7C6D"
+          title="+"
+          onPress={() => props.onClose(false)}
+        />
+        {props.children}
 
-    </View>
+        </View>
       </View>
+    </Modal>
+    </View>
   );
 }
 
 
 const styles = StyleSheet.create({
-  teste: {
+  container: {
     flex: 1,
-    backgroundColor: '#000000aa',
+    backgroundColor: '#FAFAFA',
     paddingHorizontal: 30,
     paddingVertical: 30,
   },

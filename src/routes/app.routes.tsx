@@ -11,6 +11,7 @@ import Dashboard from '../pages/Dashboard';
 import Financeiro from '../pages/Financeiro';
 import Vendas from '../pages/Vendas';
 import Notificacoes from '../pages/Notificacoes';
+import Sair from '../pages/Sair';
 
 
 export function AppRoutes(){
@@ -51,7 +52,7 @@ export function AppRoutes(){
             />
             <Screen 
             name="Sair"
-            component={Financeiro}
+            component={Sair}
             />
         </Navigator>
     )
