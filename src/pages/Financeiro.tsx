@@ -1,19 +1,22 @@
 import React, { useState } from "react";
-import { View, StyleSheet, Modal, Text } from "react-native";
+import { 
+  View, 
+  StyleSheet, 
+  } from "react-native";
 
-import { Header } from "../components/Header";
-import { CardPrincipal } from "../components/CardPrincipal";
+    import {
+    TitleP24,
+    Flex,
+    Mb28,
+    ButtonText,
+    TitleP16,
+    InputSimple,
+    TitleP14,
+  } from "../styles/styles";
 
-import {
-  TitleP24,
-  Flex,
-  Mb28,
-  ButtonText,
-  TitleP16,
-  InputSimple,
-  TitleP14,
-} from "../styles/styles";
-import ModalComponent from "../components/Modal";
+  import ModalComponent from "../components/Modal";
+  import { Header } from "../components/Header";
+  import { CardPrincipal } from "../components/CardPrincipal";
 
 export default function Financeiro() {
   const [openedModal, setOpenedModal] = useState(false);
@@ -88,6 +91,8 @@ export default function Financeiro() {
       <Mb28 />
 
       <TitleP24 color="#3E3B5B">EXTRATO</TitleP24>
+
+      
     </View>
   );
 }

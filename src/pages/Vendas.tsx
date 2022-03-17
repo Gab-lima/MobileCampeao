@@ -9,13 +9,24 @@ import {
 
 import { Header } from "../components/Header";
 import { CardPrincipal } from "../components/CardPrincipal";
+import ModalComponent from "../components/Modal";
 
-import { TitleP24, Flex, Mb28, InputStyleFilter, FlexComponent, ButtonText} from "../styles/styles"
+
+
+
+
+import { TitleP24, TitleP14, Flex, Mb28, InputStyleFilter, FlexComponent, ButtonText, TitleP16, InputSimple} from "../styles/styles"
 import { CardTransacoes } from '../components/CardTransacoes';
+
+
+
 
 export default function Vendas() {
 
-  const [count, setCount] = useState(false);
+  const [openedModal, setOpenedModal] = useState(false);
+
+
+
  
   return (
 
@@ -35,22 +46,32 @@ export default function Vendas() {
 
       <FlexComponent>
             <InputStyleFilter placeholder="teste" />
-            <ButtonText color="#FD7C6D" title="Abrir" onPress={() => setCount(true)}/>
+            <ButtonText  color="#FD7C6D" title="Abrir" onPress={() => setOpenedModal(true)}/>
       </FlexComponent>
 
 
-       <Modal
-        transparent={true}
-        visible={count}
-        >
-      <View style={{backgroundColor:"#000000aa", flex: 1}}>
-        <View style={{backgroundColor:"#FFF", margin:50, padding:40, borderRadius:10, flex: 1}} >
-      <Text style={{color:"#000"}}> Aqui vai o conteúdo</Text>
-      <ButtonText color="#FD7C6D" title="Fechar" onPress={() => setCount(false)}/>
+      <ModalComponent  opened={openedModal} onClose={(opened: boolean) => setOpenedModal(opened)}>
+      
+      <Mb28 />
 
-        </View>
-      </View>
-    </Modal>
+      <TitleP16 style={{marginBottom: 7}} textAlign="left" color="#3E3B5B">Período</TitleP16>
+        <InputSimple style={{marginBottom: 15}}/>
+
+        <TitleP16 style={{marginBottom: 7}} textAlign="left" color="#3E3B5B">Tipo</TitleP16>
+        <InputSimple style={{marginBottom: 15}}/>
+
+        <TitleP16 style={{marginBottom: 7}} textAlign="left" color="#3E3B5B">Produto</TitleP16>
+        <InputSimple style={{marginBottom: 15}}/>
+
+        <TitleP16 style={{marginBottom: 7}} textAlign="left" color="#3E3B5B">Ofertas</TitleP16>
+        <InputSimple style={{marginBottom: 15}}/>
+
+        <TitleP16 style={{marginBottom: 7}} fontWeight="600" textAlign="left" color="#3E3B5B">Método de pagamento</TitleP16>
+
+        
+
+
+    </ModalComponent>
 
 
     <CardTransacoes title="PAGO" backGround="#025579"/>

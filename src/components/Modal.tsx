@@ -1,5 +1,4 @@
-import { useLinkProps } from "@react-navigation/native";
-import React, { JSXElementConstructor, useState } from "react";
+import React from "react";
 import {
   View,
   StyleSheet,
@@ -28,7 +27,7 @@ export default function ModalComponent(props: modalProps) {
       <View style={{backgroundColor:"#000000aa", flex: 1}}>
         <View style={{backgroundColor:"#FFF", margin:50, padding:40, borderRadius:10, flex: 1}} >
       
-        <ButtonText
+        <ButtonText 
           color="#FD7C6D"
           title="+"
           onPress={() => props.onClose(false)}
