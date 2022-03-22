@@ -92,6 +92,8 @@ export default function Financeiro() {
 
       <TitleP24 color="#3E3B5B">EXTRATO</TitleP24>
 
+     
+
       
     </View>
   );

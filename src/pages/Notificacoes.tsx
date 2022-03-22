@@ -5,7 +5,7 @@ import { Header } from "../components/Header";
 
 import { TitleP24, TitleP16, FlexNoSpace, Mb28 } from "../styles/styles";
 
-import { RadioButton, Text } from "react-native-paper";
+import { RadioButton } from "react-native-paper";
 
 export default function Financeiro() {
   const [checked, setChecked] = React.useState("first");

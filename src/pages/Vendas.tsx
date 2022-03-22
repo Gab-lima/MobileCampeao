@@ -3,16 +3,12 @@ import React, { useState } from 'react';
 import {
   View,
   StyleSheet,
-  Modal,
-  Text
+  ScrollView,
 } from "react-native";
 
 import { Header } from "../components/Header";
 import { CardPrincipal } from "../components/CardPrincipal";
 import ModalComponent from "../components/Modal";
-
-
-
 
 
 import { TitleP24, TitleP14, Flex, Mb28, InputStyleFilter, FlexComponent, ButtonText, TitleP16, InputSimple} from "../styles/styles"
@@ -25,7 +21,7 @@ export default function Vendas() {
 
   const [openedModal, setOpenedModal] = useState(false);
 
-
+  const [checked, setChecked] = React.useState(false);
 
  
   return (
@@ -69,18 +65,31 @@ export default function Vendas() {
         <TitleP16 style={{marginBottom: 7}} fontWeight="600" textAlign="left" color="#3E3B5B">Método de pagamento</TitleP16>
 
         
+   
 
 
     </ModalComponent>
 
+    <ScrollView >
+      
+    <CardTransacoes title="PAGO" backGround="#025579"/>
+    <CardTransacoes title="PENDENTE" backGround="#FD7C6D"/>
+    <CardTransacoes title="PAGO" backGround="#025579"/>
+    <CardTransacoes title="PENDENTE" backGround="#FD7C6D"/>
+    <CardTransacoes title="PAGO" backGround="#025579"/>
+    <CardTransacoes title="PENDENTE" backGround="#FD7C6D"/>
+    <CardTransacoes title="PAGO" backGround="#025579"/>
+    <CardTransacoes title="PENDENTE" backGround="#FD7C6D"/>
+    <CardTransacoes title="PAGO" backGround="#025579"/>
+    <CardTransacoes title="PENDENTE" backGround="#FD7C6D"/>
+    <CardTransacoes title="PAGO" backGround="#025579"/>
+    <CardTransacoes title="PENDENTE" backGround="#FD7C6D"/>
+    <CardTransacoes title="PAGO" backGround="#025579"/>
+    <CardTransacoes title="PENDENTE" backGround="#FD7C6D"/>
+    <CardTransacoes title="PAGO" backGround="#025579"/>
 
-    <CardTransacoes title="PAGO" backGround="#025579"/>
-    <CardTransacoes title="PENDENTE" backGround="#FD7C6D"/>
-    <CardTransacoes title="PAGO" backGround="#025579"/>
-    <CardTransacoes title="PENDENTE" backGround="#FD7C6D"/>
-    <CardTransacoes title="PAGO" backGround="#025579"/>
-    <CardTransacoes title="PENDENTE" backGround="#FD7C6D"/>
-
+  
+    </ScrollView>
       
     </View>
    
@@ -95,6 +104,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 30,
     paddingVertical: 30,
   },
+
 });
 
 
