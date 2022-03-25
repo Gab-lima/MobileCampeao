@@ -1,4 +1,3 @@
-import { TextInput } from 'react-native';
 import styled from 'styled-components/native';
 
 export const TitleP14 = styled.Text`
@@ -26,11 +25,17 @@ flex-direction: row;
 justify-content: space-between;
 align-items: center;
 
+
 `
 export const FlexNoSpace = styled.View`
 flex-direction: row;
 align-items: center;
+`
 
+export const FlexInput = styled.View`
+flex-direction: row;
+align-items: center;
+background-color: '#FFF';
 `
 
 export const FlexCenterTop = styled.View`
@@ -111,9 +116,16 @@ margin: 0;
 `
 
 export const InputIconStyle = styled(InputStyleFilter)`
-width: 90%;
+max-width: 90%;
+min-width: 90%;
 margin: 0;
 border: 0px;
-background-color: #000;
+padding: 10px 0px;
+padding-left: 15px;
 `
 
+export const TouchableOpacityStyle = styled.TouchableOpacity`
+background-color: ${props => `${props.backGround}`};
+padding: 10px 0;
+border-radius: 4px;
+`

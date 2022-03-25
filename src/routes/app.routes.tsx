@@ -12,6 +12,7 @@ import Financeiro from '../pages/Financeiro';
 import Vendas from '../pages/Vendas';
 import Notificacoes from '../pages/Notificacoes';
 import Login from '../pages/Login';
+import { Image } from 'react-native';
 
 
 export function AppRoutes(){
@@ -34,7 +35,7 @@ export function AppRoutes(){
             component={Dashboard}
             // options={{
             //     tabBarIcon: ({ size, color}) => (
-            //     <Entypo name='home' size={size} color={color} />
+            //         <Image source={require('../assets/img/IconLogin.png')} />
             //     )
             // }}
             />

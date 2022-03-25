@@ -1,25 +1,24 @@
 import React from "react";
 import { 
-   Image, TextInput,
+   Image,
   } from "react-native";
-import { Flex, InputIconStyle } from "../styles/styles";
+import { FlexInput, InputIconStyle } from "../styles/styles";
 
 interface InputIconProps{
     title?: string;
-    
-    
+    placeholder?: string;
+    children?: React.ReactNode;
   }
 
 
 export default function InputIcon(props: InputIconProps) {
 
   return (
-    
-        <Flex>
-        <Image source={require('../assets/img/email.png')} />
-        <InputIconStyle placeholder="testef" />
-        </Flex>
-
+        <FlexInput>
+        {props.children}
+        <InputIconStyle  placeholder={props.placeholder} placeholderTextColor="#B7B6C4" />
+        </FlexInput>
+        
   );
 }
 

@@ -6,6 +6,8 @@ import {
 } from "react-native";
 
 import { ButtonText,} from "../styles/styles"
+import { ButtonClose,} from "./ButtonTouch"
+
 
 
 interface modalProps{
@@ -31,6 +33,7 @@ export default function ModalComponent(props: modalProps) {
           color="#FD7C6D"
           title="+"
           onPress={() => props.onClose(false)}
+          
         />
         {props.children}
 
