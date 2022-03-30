@@ -3,11 +3,10 @@ import {
   View,
   StyleSheet,
   Modal,
+  TouchableOpacity
 } from "react-native";
 
-import { ButtonText,} from "../styles/styles"
-import { ButtonClose,} from "./ButtonTouch"
-
+import { ButtonText,TextRotate} from "../styles/styles"
 
 
 interface modalProps{
@@ -22,19 +21,17 @@ export default function ModalComponent(props: modalProps) {
   return (
     <View>
 
-      <Modal
+      <Modal 
         transparent={true}
         visible={props.opened}
         >
       <View style={{backgroundColor:"#000000aa", flex: 1}}>
-        <View style={{backgroundColor:"#FFF", margin:50, padding:40, borderRadius:10, flex: 1}} >
-      
-        <ButtonText 
-          color="#FD7C6D"
-          title="+"
-          onPress={() => props.onClose(false)}
-          
-        />
+        <View style={{backgroundColor:"#FFF", margin:50, paddingHorizontal:40, borderRadius:10, }} >
+
+        <TouchableOpacity 
+        onPress={() => props.onClose(false)}>          
+        <TextRotate style={styles.textX}>+</TextRotate>
+       </TouchableOpacity>      
         {props.children}
 
         </View>
@@ -46,12 +43,10 @@ export default function ModalComponent(props: modalProps) {
 
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#FAFAFA',
-    paddingHorizontal: 30,
-    paddingVertical: 30,
-  },
+  textX:{
+    color: '#000',
+    left: 160,
+  }
 });
 
 

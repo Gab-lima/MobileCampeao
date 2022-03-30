@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import {Image, StyleSheet, View } from "react-native";
 
-import { FlexSelectComplete, } from "../styles/styles"
+import { FlexSelect, } from "../styles/styles"
 
 
 
@@ -12,7 +12,7 @@ export default function PickerComponent() {
     const [selectedLanguage, setSelectedLanguage] = useState();
   
     return (
-        <FlexSelectComplete style={{backgroundColor: 'white'}}>
+        <FlexSelect style={{backgroundColor: 'white'}}>
         <Picker style={styles.picker}
         selectedValue={selectedLanguage}
         itemStyle={{ backgroundColor: "red", color: "blue", fontFamily:"Ebrima", fontSize:17 }}
@@ -27,21 +27,23 @@ export default function PickerComponent() {
       </Picker>
       <Image style={styles.imageStyle} source={require('../assets/img/Vector.png')} />
 
-      </FlexSelectComplete>
+      </FlexSelect>
     );
   }
 
   const styles = StyleSheet.create({
     picker: {
-      width: 200,
-      backgroundColor: 'transparent',
+      width: 184,
+      backgroundColor: 'white',
+      borderRadius: 10,
+      borderColor: 'black',
       color: '#3E3B5B',
+      borderWidth: 2,
       padding: 0,
-
     },
     
       imageStyle: {
-         left: 10,
+         right: 15,
       },
 
   });

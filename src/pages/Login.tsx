@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import { View, StyleSheet, Image } from "react-native";
 import { ButtonClose } from "../components/ButtonTouch";
 import InputIconSenha from "../components/InputPassword";
-import { FlexCenterTop, Flex, Mb28, TitleP14, FlexNoSpace, InputIconStyle } from "../styles/styles";
+import { FlexCenterTop, Mb28, TitleP14, FlexNoSpace, InputIconStyle } from "../styles/styles";
 
 export default function Login() {
   return (
