@@ -19,12 +19,10 @@ font-weight: ${props => `${props.fontWeight}`};
 text-align: ${props => `${props.textAlign}`};
 `
 
-
 export const Flex = styled.View`
 flex-direction: row;
 justify-content: space-between;
 align-items: center;
-
 
 `
 export const FlexNoSpace = styled.View`
@@ -56,7 +54,6 @@ text-align: ${props => `${props.textAlign}`};
 font-size: 24px;
 font-weight: 700;
 margin-bottom: 12px;
-
 `
 
 export const CardPrincipalStyle = styled.View`
@@ -129,3 +126,7 @@ background-color: ${props => `${props.backGround}`};
 padding: 10px 0;
 border-radius: 4px;
 `
+
+
+
+

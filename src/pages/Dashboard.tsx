@@ -6,14 +6,12 @@ import {
  
 } from "react-native";
 
-import {Picker} from '@react-native-picker/picker';
-
 
 import { Header } from "../components/Header";
 import { CardPrincipal } from "../components/CardPrincipal";
 
-import { TitleP16, TitleP24, Flex, Mb28, FlexCenterTop,  } from "../styles/styles"
-import MenuComponent from "../components/Menu";
+import { TitleP16, TitleP24, Flex, Mb28, FlexNoSpace } from "../styles/styles"
+import PickerComponent from "../components/Select";
 
 
 
@@ -22,7 +20,7 @@ export default function Dashboard() {
  
   return (
     <View style={styles.container}>
-    <View>
+    
       <Header name="Gustavo"/>
       <TitleP24 color="#3E3B5B">DASHBOARD</TitleP24>
 
@@ -35,20 +33,17 @@ export default function Dashboard() {
 
       <TitleP24 color="#3E3B5B">Vendas realizadas</TitleP24>
 
-      <Flex>
-        <MenuComponent/>
+      <FlexNoSpace>
+        <PickerComponent />
       <View>
       <TitleP16 fontWeight="400" color="#3E3B5B" textAlign="left">Ultimos 7  dias</TitleP16>
       <TitleP24 fontWeight="400" color="#3E3B5B" textAlign="left">R$ 20.000,00</TitleP24>
       </View>
-      </Flex>
+      </FlexNoSpace>
       
    
 
-    {/* <Picker>
-      <Picker.Item label="Java"  />
-      <Picker.Item label="JavaScript"/>
-    </Picker> */}
+    
 
 <Image source={require('../assets/img/img-grafico.png')} />
 
@@ -59,7 +54,6 @@ export default function Dashboard() {
       <CardPrincipal backGround="#FD7C6D" small="Compensados hoje (1)" text="R$ 10.000,00"/>
       </Flex>
 
-    </View>
     </View>
   );
 }

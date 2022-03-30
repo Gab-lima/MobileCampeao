@@ -17,6 +17,7 @@ import {
   import ModalComponent from "../components/Modal";
   import { Header } from "../components/Header";
   import { CardPrincipal } from "../components/CardPrincipal";
+import PickerComponent from "../components/Select";
 
 export default function Financeiro() {
   const [openedModal, setOpenedModal] = useState(false);
@@ -91,6 +92,9 @@ export default function Financeiro() {
       <Mb28 />
 
       <TitleP24 color="#3E3B5B">EXTRATO</TitleP24>
+
+    <PickerComponent/>
+
 
      
 
