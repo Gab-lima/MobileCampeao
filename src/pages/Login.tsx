@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import { View, StyleSheet, Image } from "react-native";
 import { ButtonClose } from "../components/ButtonTouch";
-import InputIcon from "../components/InputIcon";
 import InputIconSenha from "../components/InputPassword";
-import MyComponent from "../components/InputPassword";
+import MenuComponent from "../components/Menu";
 import { FlexCenterTop, Flex, Mb28, TitleP14, FlexNoSpace, InputIconStyle } from "../styles/styles";
 
 export default function Login() {
@@ -35,7 +34,8 @@ export default function Login() {
 
       <Mb28 />
       <ButtonClose backGround="#025579" title="ACESSAR" />
-
+    
+      <MenuComponent />
 
     </View>
 
